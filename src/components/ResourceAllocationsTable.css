@@ -1,0 +1,165 @@
+/* Resource Allocation Table Page Styling */
+.allocation-table-container {
+    padding: 20px;
+    background-color: #111; /* Dark background */
+    color: white;
+    border-radius: 8px;
+}
+
+/* Title */
+.allocation-table-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.allocation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #222;
+}
+
+.allocation-table th, .allocation-table td {
+    border: 1.5px solid #444;
+    padding: 10px;
+    text-align: center;
+}
+
+.allocation-table th {
+    background-color: #052b57;
+    color: white;
+}
+
+/* Style for Inputs in Table (for Editing Mode) */
+.allocation-table input {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+    padding: 5px;
+    border-radius: 4px;
+    width: 90%;
+    outline: none;
+}
+
+/* Button Styling */
+.edit-btn, .delete-btn, .save-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.edit-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0056b3;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #a71d2a;
+}
+
+.save-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: #1e7e34;
+}
+
+/* Overlay Background */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+  
+/* Modal Box */
+.modal-content {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+}
+  
+/* Input Fields */
+.modal-content input {
+    width: 90%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* Buttons */
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+  
+.add-btn {
+    background: #219806;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+  
+.add-btn:hover {
+    background: #001c52;
+}
+  
+.close-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+  
+.close-btn:hover {
+    background: #c82333;
+}
+  
+/* Add Button Near "Actions" */
+.add-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1e519d;
+    margin-left: 10px;
+}
+  
+.add-btn:hover {
+    color: #0056b3;
+}

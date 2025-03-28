@@ -1,0 +1,61 @@
+/* Dropdown container styles */
+.filter-dropdown {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  gap: 1rem; /* Add spacing between dropdowns */
+  align-items: center; /* Center align dropdowns vertically */
+  justify-content: center; /* Keep dropdowns aligned */
+  padding: 0.5rem 0; /* Add top & bottom padding */
+}
+
+/* Individual select dropdown styles */
+.filter-dropdown select {
+  padding: 0.6rem 1.2rem; /* Comfortable padding */
+  font-size: 0.8rem; /* Readable text */
+  font-weight: 500; /* Slightly bold for better visibility */
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Subtle border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #dbebf3; /* Light background */
+  color: #333; /* Darker text for contrast */
+  cursor: pointer; /* Indicate clickable dropdown */
+  transition: all 0.3s ease-in-out; /* Smooth animations */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Dropdown hover effect */
+.filter-dropdown select:hover {
+  border-color: rgba(0, 123, 255, 0.6); /* Highlight border */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3); /* More defined shadow */
+}
+
+/* Dropdown focus effect */
+.filter-dropdown select:focus {
+  outline: none; /* Remove default outline */
+  border-color: rgba(0, 123, 255, 1); /* Stronger border highlight */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.6); /* Add glowing effect */
+}
+
+/* Option styles */
+.filter-dropdown option {
+  padding: 0.5rem; /* Comfortable spacing */
+  background-color: white; /* Clean background */
+  color: #333; /* Keep text readable */
+}
+
+/* Placeholder option styles */
+.filter-dropdown option[value=""] {
+  color: rgba(0, 0, 0, 0.5); /* Gray color for placeholder */
+  font-style: italic; /* Italicized for distinction */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .filter-dropdown {
+    flex-direction: column; /* Stack dropdowns on small screens */
+    align-items: stretch;
+  }
+  
+  .filter-dropdown select {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

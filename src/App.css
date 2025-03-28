@@ -1,0 +1,131 @@
+/* General Styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #00000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body, #root {
+  margin: 0;
+  height: 100vh; /* Ensure body and root occupy full screen height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  background-color: #333; /* Adjust background color if needed */
+  padding: 10px 20px;
+  width: 100%;
+}
+
+#root {
+  padding-top: 60px; /* Add space for the fixed navbar */
+}
+
+/* Page Container */
+.page-container {
+  flex: 1; /* Allow the container to stretch and fill available space */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+/* Typography */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/* Buttons */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Light Mode Overrides */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+
+  a:hover {
+    color: #747bff;
+  }
+
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto; /* Enable horizontal scroll */
+  margin-top: 80px; /* To make sure table does not overlap with navbar */
+  height: 600px; /* Set the height of the table container */
+  overflow-y: auto; /* Enable vertical scroll inside table */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  min-width: 150px; /* Avoid breaking of table columns */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  th, td {
+    padding: 4px;
+  }
+}

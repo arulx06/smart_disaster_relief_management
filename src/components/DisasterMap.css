@@ -1,0 +1,73 @@
+/* 📌 Layers Control Styling */
+.leaflet-control-layers {
+    background: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent black */
+    color: white !important;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 14px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* 🔘 Checkboxes and radio buttons inside the control */
+  .leaflet-control-layers input {
+    accent-color: #0077ff; /* Golden-yellow for radio buttons */
+    transform: scale(1.2);
+    margin-right: 6px;
+  }
+  
+  /* ✨ Text inside the Layers Control */
+  .leaflet-control-layers label {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* 🖱️ Hover effect on labels */
+  .leaflet-control-layers label:hover {
+    color: #0077ff;
+  }
+  
+  /* 🔝 Adjust position to avoid overlapping with other UI */
+  .leaflet-top.leaflet-right {
+    margin-top: 0px !important;
+  }
+
+  /* 🌍 Map Wrapper - Outer Layer */
+.map-wrapper {
+  width: 85%;  /* Adjust width as needed */
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: white; /* Optional: Set background color */
+  border-radius: 30px; /* Curved Edges */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Ensures nothing leaks outside the rounded edges */
+}
+
+  /* 🏙️ Street View Link */
+    .street-view-link {
+        display: inline-block;
+        margin-top: 8px;
+        padding: 5px 10px;
+        background: #ffffff;
+        color: #000000;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .street-view-link:hover {
+        background: #0056b3;
+        color: #ffffff;
+    }
+
+  
+    
+  /* 📱 Mobile-friendly: Adjust width */
+  @media (max-width: 600px) {
+    .leaflet-control-layers {
+      font-size: 12px;
+      padding: 5px;
+    }
+  }
+  
+  
